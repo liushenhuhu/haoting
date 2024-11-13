@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>联系我们-广州豪廷木门</title>
+    <META NAME="keywords" CONTENT="广州豪廷木门,豪廷家居,全屋定制">
+    <META NAME="description" CONTENT="豪廷木作·家居专注于木门与全屋定制服务，作为一家致力于为追求卓越的客户提供精致家居解决方案的工厂，我们将传统的匠心工艺与现代设计理念完美融合。每一件产品都经过精雕细琢，力求呈现出豪廷独有的尊贵。豪廷木作不仅为您定制家居，更为您雕琢生活的艺术。">
+
+
+    <link rel="shortcut icon" href="img/logo.jpg">
+<!--    CSS-->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <link rel="stylesheet" href="assets/css/hawk-pro-bsb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+<!--    高德api-->
+    <script src="https://webapi.amap.com/loader.js"></script>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: "1c028406f740b9e3ad839ff77d78f11」",
+        };
+        AMapLoader.load({
+            key: "c284866494e9b7483929db86bddeed56", //申请好的 Web 端开发 Key，首次调用 load 时必填
+            version: "2.0", //指定要加载的 JS API 的版本，缺省时默认为 1.4.15
+            plugins: ["AMap.Scale"], //需要使用的的插件列表，如比例尺'AMap.Scale'，支持添加多个如：['AMap.Scale','...','...']
+            AMapUI: {
+                //是否加载 AMapUI，缺省不加载
+                version: "1.1", //AMapUI 版本
+                plugins: ["overlay/SimpleMarker"], //需要加载的 AMapUI ui 插件
+            },
+            Loca: {
+                //是否加载 Loca， 缺省不加载
+                version: "2.0", //Loca 版本
+            },
+        })
+            .then((AMap) => {
+                const map = new AMap.Map("container", {
+                    zoom: 11, //地图级别
+                    center: [114.079746, 34.430016], //地图中心点
+                    viewMode: "2D", //设置地图模式
+                });
+                var marker = new AMap.Marker({
+                    position: [114.079746, 34.430016]
+                });
+                map.add(marker);
+                var infoWindow = new AMap.InfoWindow({
+                    content: '<div style="font-size:14px;">郑州市经开区</div>',
+                    offset: new AMap.Pixel(0, -30)
+                });
+                infoWindow.open(map, marker.getPosition());
+                map.addControl(new AMap.Scale()); //添加比例尺组件到地图实例上
+            })
+            .catch((e) => {
+                console.error(e); //加载错误提示
+            });
+                </script>
+
+
+
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+
+    <style>
+        .lined::after {
+            content: '';
+            display: block;
+            width: 6.25rem;
+            height: 2px;
+            margin: 1.25rem auto;
+            background: rgb(231,211,165);
+        }
+        .lined2::after {
+            content: '';
+            display: block;
+            width: 10000rem;
+            height: 1px;
+            margin: 1.25rem auto;
+            background: rgb(231,211,165);
+        }
+        html{
+            background-image: url(img/bg3.png)
+        }
+        /* 移动端字体大小 */
+        @media (max-width: 768px) {
+            .custom-text {
+                font-size: 10px; /* 移动端字体大小 */
+            }
+        }
+    </style>
+</head>
+<body class="" style="background-image: url(img/bg3.png);">
+
+
+<header class="fixed-top" style="min-height: 1px;height: auto;width: 100%">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+            <a class="navbar-brand pe-xl-5 pe-lg-4 ml-4" href="index.html">
+                <img src="img/logo.jpg" height="50px">
+            </a>
+            <button  class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll" >
+                <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color1" href="about.html">关于公司</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color1" href="product.html">产品介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color1" href="product.html">案例展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color1" href="contact.html">联系我们</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <img src="img/logo2.png" height="50px" style="position: absolute;right: 40px">
+
+        </nav>
+    </div>
+</header>
+<div class="mt-10">
+    <header class="text-center" style="background: rgba(255,0,0,0)">
+        <h2 class="text-uppercase lined color1 mt-2 animate__animated animate__fadeIn">联系我们</h2>
+    </header>
+</div>
+<div class="container h-100" >
+    <div class="container-fluid contact py-5">
+        <div class="container py-5 animate__animated animate__fadeIn">
+            <div class="row g-5">
+                <div class="col-xl-12">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="row bg-light rounded p-5 mb-5">
+                            <h4 class="text-primary mb-4">联系我们</h4>
+                            <div class="col-lg-6 row g-4">
+                                <div class="col-md-6">
+                                    <div class="contact-add-item">
+                                        <div class="contact-icon text-primary mb-4">
+                                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4>地址</h4>
+                                            <p class="mb-0">河南省郑州市经开区</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-add-item">
+                                        <div class="contact-icon text-primary mb-4">
+                                            <i class="fas fa-envelope fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4>邮箱</h4>
+                                            <p class="mb-0">3334564318@qq.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-add-item">
+                                        <div class="contact-icon text-primary mb-4">
+                                            <i class="fa fa-phone-alt fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4>电话</h4>
+                                            <span style="white-space:pre"></span><a href="tel://13592133881">13592133881</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-add-item">
+                                        <div class="contact-icon text-primary mb-4">
+                                            <i class="fab fa-firefox-browser fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4>网站</h4>
+                                            <a href="index.html"><p class="mb-0">www.GZhaoting.com</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="rounded h-100 col-12">
+                                    <div id="container" style="width: auto; height: 40vh;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 页脚-->
+<div class="container" style="max-width: 100%">
+
+    <div class="row" style="margin-top: 20%">
+        <p class="row lined2"></p>
+        <div class="row">
+            <div class="col-lg-3 col-6 text-center text-small">
+                <h3 class="color1 footer_text">联系我们</h3>
+                <h6 class="color1 custom-text">电话(王经理):<a class="color1" href="tel://13592133881">13592133881</a></h6>
+                <h6 class="color1 custom-text">微信:13592133881</h6>
+                <h6 class="color1 custom-text">QQ:3334564318</h6>
+                <h6 class="color1 custom-text">邮箱:3334564318@qq.com</h6>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <h3 class="color1 footer_text">Contact Us</h3>
+                <h6 class="color1 custom-text">Tel:<a class="color1" href="tel://13592133881">13592133881</a></h6>
+                <h6 class="color1 custom-text">Wechat:13592133881</h6>
+                <h6 class="color1 custom-text">QQ:3334564318</h6>
+                <h6 class="color1 custom-text">E-mail:3334564318@qq.com</h6>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <h3 class="color1 footer_text">地址</h3>
+                <h6 class="color1 custom-text" >河南省郑州市经开区</h6>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <h3 class="color1 footer_text">Adress</h3>
+                <h6 class="color1 custom-text">Zhengzhou Economic Development Zone,<br> Henan Province</h6>
+            </div>
+
+        </div>
+        <a href="https://beian.miit.gov.cn" class="color1 text-center">粤ICP备2024315250号-1</a>
+    </div>
+</div>
+
+<script>
+    // 菜单控制
+    <script>
+        $(function() {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+
+</script>
+
+</body>
+</html>
