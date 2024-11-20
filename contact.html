@@ -40,16 +40,16 @@
         })
             .then((AMap) => {
                 const map = new AMap.Map("container", {
-                    zoom: 11, //地图级别
-                    center: [114.079746, 34.430016], //地图中心点
+                    zoom: 18, //地图级别
+                    center: [113.342583,23.136639], //地图中心点
                     viewMode: "2D", //设置地图模式
                 });
                 var marker = new AMap.Marker({
-                    position: [114.079746, 34.430016]
+                    position: [113.342583,23.136639]
                 });
                 map.add(marker);
                 var infoWindow = new AMap.InfoWindow({
-                    content: '<div style="font-size:14px;">郑州市经开区</div>',
+                    content: '<div style="font-size:14px;">广州市天河区五山路1号</div>',
                     offset: new AMap.Pixel(0, -30)
                 });
                 infoWindow.open(map, marker.getPosition());
@@ -241,11 +241,11 @@
             </div>
             <div class="col-lg-3 col-6 text-center">
                 <h3 class="color1 footer_text">地址</h3>
-                <h6 class="color1 custom-text" >河南省郑州市经开区</h6>
+                <h6 class="color1 custom-text" >广州市天河区五山路1号</h6>
             </div>
             <div class="col-lg-3 col-6 text-center">
                 <h3 class="color1 footer_text">Adress</h3>
-                <h6 class="color1 custom-text">Zhengzhou Economic Development Zone,<br> Henan Province</h6>
+                 <h6 class="color1 custom-text">No. 1, Wushan Road, Tianhe District, <br>Guangzhou</h6>
             </div>
 
         </div>
